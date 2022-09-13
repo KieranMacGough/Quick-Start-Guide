@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-64x64.png">
+	<!-- For Chrome for Android: -->
+	<link rel="icon" sizes="192x192" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-192x192.png">
+	<!-- For iPhone 6 Plus with @3× display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-180x180.png">
+	<!-- For iPad with @2× display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-152x152.png">
+	<!-- For iPad with @2× display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-144x144.png">
+	<!-- For iPhone with @2× display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-120x120.png">
+	<!-- For iPhone with @2× display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-114x144.png">
+	<!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-76x76.png">
+	<!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-72x72.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-57x57.png">
+
+	<title>Codeweavers - Quick Start Guide</title>
+	<script src="./javascript/jquery.js"></script>
+	<script src="./javascript/javascript.js"></script>
+	<link rel="stylesheet" href="./css/WPQSG.css">
+	<!-- Start of codeweavers Zendesk Widget script -->
+	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4ab79f47-c3cd-429a-b827-fe5d0a259e7b"> </script>
+	<!-- End of codeweavers Zendesk Widget script -->
+</head>
+
+<body>
+	<!--Heading/Menu Section-->
+
+	<header>
+		<img src="assets/images/codeweavers-logo.svg" alt="">
+		<h6>Codeweavers - Quick Start Guide</h6>
+		<a href="https://docs.codeweavers.net" target="_blank">
+			<p>Full API Reference</p>
+		</a>
+	</header>
+
+	<nav>
+		<p id="list-show-click">Quick Start Guide
+			<img id="change-chevron" src="assets/images/chevron.svg" alt="Close">
+			<img id="change-chevron-hide" src="assets/images/chevron-closed.svg" alt="Close">
+		</p>
+		<ul class="list" id="hidden-list">
+			<a href="QuickStartGuideHome.html">
+				<li class="current-link-location">
+					<strong>Introduction</strong>
+				</li>
+			</a>
+			<a href="apiVehicles.html">
+				<li>Stock Feed (api/vehicles)</li>
+			</a>
+			<a href="apiFinanceCalculateForDisplay.html">
+				<li>Calculate for Display (api/finance/calculatefordisplay)</li>
+			</a>
+			<a href="apiPaymentSearch.html">
+				<li>Payment Search (api/vehicles/search)</li>
+			</a>
+			<a href="FinanceCalculatorPlugin.html">
+				<li>Finance Calculator Plugin</li>
+			</a>
+			<a href="StandaloneApplyForFinanceForm.html">Standalone Apply For Finance Form</li>
+			</a>
+		</ul>
+
+		<div class="light-divider-navigation"></div>
+
+		<ul class="list">
+			<a href="GlossaryFAQs.html">
+				<li>Glossary/FAQs</li>
+			</a>
+		</ul>
+		<p id="back-to-top" class="paragraph-link">Back to Top
+				<img src="assets/images/chevron.svg" alt="Close" />
+			</p>
+	</nav>
+	<aside id="main-wrapper">
+		<div>
+			<h1>Quick Start Guide</h1>
+			<div class="divider"></div>
+			<p>This quick start guide will get you started in integrating our core services for web providers. This guide will cover:</p>
+			<ul class="bullet-list">
+				<li>
+					<a class="paragraph-link" href="apiVehicles.html">Stock Feed (api/vehicles)</a>
+				</li>
+				Setting up a stock feed to import the dealers stock into the Codeweavers system for easy reference in the finance requests.
+				<br />
+				<li>
+					<a class="paragraph-link" href="apiFinanceCalculateForDisplay.html">Calculate for Display (api/finance/calculatefordisplay)</a>
+				</li>
+				Getting finance quotes on a number of vehicles.
+				<br />
+				<li>
+					<a class="paragraph-link" href="apiPaymentSearch.html">Payment Search (api/vehicles/search)</a>
+				</li>
+				Search for vehicles and finance based on the finance parameters provided.
+				<br />
+				<li>
+					<a class="paragraph-link" href="FinanceCalculatorPlugin.html">Finance Calculator Plugin</a>
+				</li>
+				Integrating the finance calculator plugin for a single vehicle. Usually used on a vehicle details page.
+				<br />
+				<li>
+					<a class="paragraph-link" "StandaloneApplyForFinanceForm.html">Standalone Apply For Finance Form</a>
+				</li>
+				Integrating the Standalone Apply Form for customers to make an application without a vehicle or quote. Usually used on a Finance page.
+				<br />
+			</ul>
+			<div class="light-divider"></div>
+			<h2>API Specification</h2>
+			<p>
+				<ul class="bullet-list">
+					<li>Platform: HTTP</li>
+					<li>API Type: RESTful</li>
+					<li>Error Response codes: HTTP</li>
+					<li>JSON Availability: Yes</li>
+					<li>Libraries: HTTP / REST</li>
+				</ul>
+			</p>
+			<div class="light-divider"></div>
+			<h2>Cross-Origin Resource Sharing</h2>
+			<p>This API features Cross-Origin Resource Sharing (CORS) implemented in compliance with W3C spec, which allows cross-domain
+				communication from the browser. All responses have a wildcard same-origin which makes them completely public and accessible
+				to everyone.</p>
+			<br />
+			<div class="light-divider"></div>
+			<h2>Errors</h2>
+			<table id="table-wrapper">
+				<tbody></tbody>
+				<tr>
+					<th width="20%">
+						<strong>Error Code</strong>
+					</th>
+					<th>
+						<strong>Meaning</strong>
+					</th>
+				</tr>
+				<tr>
+					<td>400</td>
+					<td>Bad Request -- Your request is incorrect</td>
+				</tr>
+				<tr>
+					<td>401</td>
+					<td>Unauthorised -- Your credentials are incorrect</td>
+				</tr>
+				<tr>
+					<td>403</td>
+					<td>Forbidden -- You do not have permission to use the service. Error information may indicate why.</td>
+				</tr>
+				<tr>
+					<td>404</td>
+					<td>Not Found</td>
+				</tr>
+				<tr>
+					<td>429</td>
+					<td>Too Many Requests -- You're calling the service too often</td>
+				</tr>
+				<tr>
+					<td>500</td>
+					<td>Internal Server Error -- We had a problem with our servers. Please try again later.</td>
+				</tr>
+				<tr>
+					<td>503</td>
+					<td>Service Unavailable -- We're temporarily offline for maintenance. Please try again later.</td>
+				</tr>
+			</table>
+			<div class="light-divider"></div>
+			<h2>Questions?</h2>
+			<p>If you have any further questions on any of our services, please contact our customer support team at
+				<a class="paragraph-link"
+				 href="mailto:support@codeweavers.net" target="_top">support@codeweavers.net</a>, or click the Support button on the bottom right of this page.</p>
+		</div>
+	</aside>
+</body>
+
+</html>

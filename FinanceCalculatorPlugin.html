@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-64x64.png">
+    <!-- For Chrome for Android: -->
+    <link rel="icon" sizes="192x192" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-192x192.png">
+    <!-- For iPhone 6 Plus with @3× display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-180x180.png">
+    <!-- For iPad with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-152x152.png">
+    <!-- For iPad with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-144x144.png">
+    <!-- For iPhone with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-120x120.png">
+    <!-- For iPhone with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-114x144.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-76x76.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-72x72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-57x57.png">
+
+    <title>Codeweavers - Quick Start Guide</title>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/javascript.js"></script>
+    <link rel="stylesheet" href="./css/WPQSG.css">
+    <!-- Start of codeweavers Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4ab79f47-c3cd-429a-b827-fe5d0a259e7b"> </script>
+    <!-- End of codeweavers Zendesk Widget script -->
+</head>
+
+<body>
+    <!--Heading/Menu Section-->
+
+    <header>
+        <img src="assets/images/codeweavers-logo.svg" alt="">
+        <h6>Codeweavers - Quick Start Guide</h6>
+        <a href="https://docs.codeweavers.net" target="_blank">
+            <p>Full API Reference</p>
+        </a>
+    </header>
+
+    <nav>
+        <p id="list-show-click">Quick Start Guide
+            <img id="change-chevron" src="assets/images/chevron.svg" alt="Close">
+            <img id="change-chevron-hide" src="assets/images/chevron-closed.svg" alt="Close">
+        </p>
+        <ul class="list" id="hidden-list">
+            <a href="QuickStartGuideHome.html">
+                <li>Introduction</li>
+            </a>
+            <a href="apiVehicles.html">
+                <li>Stock Feed (api/vehicles)</li>
+            </a>
+            <a href="apiFinanceCalculateForDisplay.html">
+                <li>Calculate for Display (api/finance/calculatefordisplay)</li>
+            </a>
+            <a href="apiPaymentSearch.html">
+                <li>Payment Search (api/vehicles/search)</li>
+            </a>
+            <a href="FinanceCalculatorPlugin.html" class="current-link-location">
+                <li>
+                    <strong>Finance Calculator Plugin</strong>
+                </li>
+            </a>
+            <a href="StandaloneApplyForFinanceForm.html">Standalone Apply For Finance Form</li>
+            </a>
+        </ul>
+
+        <div class="light-divider-navigation"></div>
+
+        <ul class="list">
+            <a href="GlossaryFAQs.html">
+                <li>Glossary/FAQs</li>
+            </a>
+        </ul>
+        <p id="back-to-top" class="paragraph-link">Back to Top
+				<img src="assets/images/chevron.svg" alt="Close" />
+			</p>
+    </nav>
+    <aside id="main-wrapper">
+        <div>
+            <h1>Finance Calculator Plugin</h1>
+            <div class="divider"></div>
+            <h2>Introduction</h2>
+            <p>The Finance Calculator Plugin is a simple plugin used to easily add a calculator with functionality for customers
+                to customise their quote. The plugin also has built-in videos and calls to action to assist the customer
+                in making a decision and to continue the finance journey. The plugin also provides a function to pull out
+                any of the details from the quote to display them elsewhere on the webpage.
+                <div class="light-divider"></div>
+                <h2>Integration</h2>
+                <p>Below is a quick sample on how to integrate the plugin.</p>
+                
+            </p>
+            <div class="tabdiv">
+                <div class="tab">
+                    <div class="tablinks1-active" onclick="openTab(1, event, 'Result')">Result
+                        <br/>&nbsp;</div>
+                    <div class="tablinks1" onclick="openTab(1, event, 'HTML Code (Using Stock)')">HTML
+                        <br />(Stock Id)</div>
+                    <div class="tablinks1" onclick="openTab(1, event, 'HTML Code (Using Vehicle Details)')">HTML
+                        <br />(Vehicle Details)</div>
+                </div>
+                <div id="Result" class="tabcontent1" style="display: block;">
+                    <div id="pluginContent1"></div>
+                    <script type="text/javascript" src="https://plugins.codeweavers.net/scripts/v1/codeweavers/finance?ApiKey=F2M8J5LD6xLnnYbDY7"></script>
+                    <script type='text/javascript'>
+                        function loadPlugin() {
+                            codeweavers.main({
+                                pluginContentDivId: 'pluginContent1',
+                                vehicle: {
+                                    stockId: "12345",
+                                },
+                                defaultParameters: {
+                                    deposit: {
+                                        defaultValue: '10',
+                                        defaultType: 'Percentage'
+                                    },
+                                    term: {
+                                        defaultValue: 60,
+                                    },
+                                    annualMileage: {
+                                        defaultValue: 10000,
+                                    }
+                                },
+                            })
+                        }
+                        loadPlugin();
+                    </script>
+
+                </div>
+
+                <div id="HTML Code (Using Stock)" class="tabcontent1">
+                    <div class="infoboxblue">
+                        <img class="infoboxicon" src="assets/images/megaphone.svg" />
+                        <p>Please note: You will need to replace the *'s with your ApiKey, which we will provide to you when
+                            the dealer signs up with us.</p>
+                    </div>
+                    <script src="https://gist.github.com/codeweaversdev/6348677d31d1f98f483acc429f7c231b.js"></script>
+                </div>
+
+                <div id="HTML Code (Using Vehicle Details)" class="tabcontent1">
+                    <div class="infoboxblue">
+                            <img class="infoboxicon" src="assets/images/megaphone.svg" />
+                        <p>Please note: You will need to replace the *'s with your ApiKey, which we will provide to you when
+                            the dealer signs up with us.</p>
+                    </div>
+                    <script src="https://gist.github.com/codeweaversdev/a2463064280bc6f83710607dbba25b14.js"></script>
+                </div>
+            </div>
+            <div class="light-divider"></div>
+            <h2>onSuccessfulCalculation()</h2>
+            <p>When the plugin loads with a successful calculation, we call the function
+                <strong>onSuccessfulCalculation()</strong>. Using this function, you can pull data from the full quote that is returned
+                with the calculation. This may be useful if you wish to display the monthly payments or Calls to Action elsewhere
+                on your website. The function can be used as the image below.</p>
+                <div class="figurediv">
+                    <img width="300px" src="assets/images/onSuccessfulCallback Example.png"></img>
+                    <div class="light-divider-navigation"></div>
+                    <p>Example use of onSuccessfulCalculation()</p>
+            </div>
+            <div class="light-divider"></div>
+            <h3>Step 1: Create the elements to display the value</h3>
+            <p>Create your elements where you would like to display the value that is returned in the quote. In the example
+                below, we have created two
+                <strong>&lt;a&gt;</strong> elements, and given them
+                <strong>id</strong>'s to be used later.</p>
+            <br />
+            <script src="https://gist.github.com/codeweaversdev/71639b1bdf8da2c00afaa550de15fee6.js"></script>
+            <br />
+            <div class="light-divider"></div>
+            <h3>Step 2: Add the onSuccessfulCalculation() function to the plugin</h3> The
+            <strong>onSuccessfulCalculation()</strong> function is called within
+            <strong>codeweavers.main()</strong>. When calling this, we use the variable
+            <strong>calculations</strong>, which contains all the data for the quotes we return.</p>
+            <br />
+            <script src="https://gist.github.com/codeweaversdev/16d6cfbf13baf9e75cf40fff1dd12186.js"></script>
+            <br />
+            <div class="light-divider"></div>
+            <h3>Step 3: Parse the data from calculations</h3>
+            <p>"calculations" is an array that contains each quote that we return. We can access this array and save the values
+                to use in the elements we created earlier. In the below, we perform a for loop to go through each of the
+                calculations returned. If it contains a Hire Purchase quote, we then update our elements with the values
+                from that quote.</p>
+            <br />
+            <script src="https://gist.github.com/codeweaversdev/c200c4ed4ee81b70f9a5ece36f79d8d4.js"></script>
+            <br />
+            <div class="light-divider"></div>
+            <h2>Full Working Example</h2>
+            <p>If done successfully, you should see a result as below. We have also provided a Full "calculations" Example.</p>
+            <br />
+            <div class="tabdiv">
+                <div class="tab">
+                    <div class="tablinks2-active" onclick="openTab(2, event, 'OSCResult')">Result
+                        <br/>&nbsp;</div>
+                    <div class="tablinks2" onclick="openTab(2, event, 'OSCHTMLsi')">HTML
+                        <br />(Stock Id)</div>
+                    <div class="tablinks2" onclick="openTab(2, event, 'OSCHTMLvd')">HTML
+                        <br />(Vehicle Details)</div>
+                    <div class="tablinks2" onclick="openTab(2, event, 'quoteResponse')">Full "calcuations" Example</div>
+                </div>
+
+                <div id="OSCResult" class="tabcontent2" style="display: block;">
+                    <p>Available from £
+                        <strong>
+                            <a id="hpMonthlyPayment"></a>
+                        </strong> per month.
+                        <br /> (On
+                        <strong>
+                            <a id="hpProductType"></a>
+                        </strong>)
+                        <br /> Click here to apply for
+                        <strong>
+                            <a id="hpProductType"></a>
+                        </strong> finance:
+                        <strong>
+                            <a class="paragraph-link" target="_blank" id="hpAffLink"></a>
+                        </strong>
+                    </p>
+                    <br />
+                    <div id="pluginContent2"></div>
+                    <script type="text/javascript" src="https://plugins.codeweavers.net/scripts/v1/codeweavers/finance?ApiKey=F2M8J5LD6xLnnYbDY7"></script>
+                    <script type='text/javascript'>
+                        function loadPlugin() {
+                            codeweavers.main({
+                                pluginContentDivId: 'pluginContent2',
+                                vehicle: {
+                                    stockId: "12345",
+                                },
+                                defaultParameters: {
+                                    deposit: {
+                                        defaultValue: '10',
+                                        defaultType: 'Percentage'
+                                    },
+                                    term: {
+                                        defaultValue: 60,
+                                    },
+                                    annualMileage: {
+                                        defaultValue: 10000,
+                                    }
+                                },
+                                onSuccessfulCalculation: function (calculations) {
+                                    console.log(calculations)
+                                    for (var i = 0; i < calculations.length; i++) {
+                                        var singleCalculation = calculations[i];
+                                        if (singleCalculation.Product.Type === 'Hire Purchase') {
+                                            document.getElementById("hpMonthlyPayment").innerHTML = singleCalculation.Quote.AllInclusiveRegularPayment;
+                                            document.getElementById("hpProductType").innerHTML = singleCalculation.Product.Type;
+                                            document.getElementById("hpAffLink").innerHTML = singleCalculation.Quote.QuoteActions.Apply;
+                                            document.getElementById("hpAffLink").href = singleCalculation.Quote.QuoteActions.Apply;
+                                            break;
+                                        }
+                                    }
+                                },
+                            });
+                        }
+                        loadPlugin();
+                    </script>
+                </div>
+
+                <div id="OSCHTMLsi" class="tabcontent2">
+                    <div class="infoboxblue">
+                            <img class="infoboxicon" src="assets/images/megaphone.svg" />
+                        <p>Please note: You will need to replace the *'s with your ApiKey, which we will provide to you when
+                            the dealer signs up with us.</p>
+                    </div>
+                    <script src="https://gist.github.com/codeweaversdev/7671ae159d862d88465efa287f52eaae.js"></script>
+                </div>
+
+                <div id="OSCHTMLvd" class="tabcontent2">
+                    <div class="infoboxblue">
+                            <img class="infoboxicon" src="assets/images/megaphone.svg" />
+                        <p>Please note: You will need to replace the *'s with your ApiKey, which we will provide to you when
+                            the dealer signs up with us.</p>
+                    </div>
+                    <script src="https://gist.github.com/codeweaversdev/47b0fb2bb7fe63194648068a27b7d3c3.js"></script>
+                </div>
+
+                <div id="quoteResponse" class="tabcontent2">
+                    <script src="https://gist.github.com/codeweaversdev/8476839322c74565860b02ca021acf5a.js"></script>
+                </div>
+            </div>
+            <div class="light-divider"></div>
+            <h2>Questions?</h2>
+            <p>If you have any further questions on any of our services, please contact our customer support team at
+                <a class="paragraph-link"
+                    href="mailto:support@codeweavers.net" target="_top">support@codeweavers.net</a>, or click the Support button on the bottom right of this page.</p>
+        </div>
+    </aside>
+</body>

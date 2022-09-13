@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-64x64.png">
+    <!-- For Chrome for Android: -->
+    <link rel="icon" sizes="192x192" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-192x192.png">
+    <!-- For iPhone 6 Plus with @3× display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-180x180.png">
+    <!-- For iPad with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-152x152.png">
+    <!-- For iPad with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-144x144.png">
+    <!-- For iPhone with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-120x120.png">
+    <!-- For iPhone with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-114x144.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-76x76.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-72x72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="https://codeweavers.net/assets/main-site/images/favicon/favicon-57x57.png">
+
+    <title>Codeweavers - Quick Start Guide</title>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/javascript.js"></script>
+    <link rel="stylesheet" href="./css/WPQSG.css">
+    <!-- Start of codeweavers Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4ab79f47-c3cd-429a-b827-fe5d0a259e7b"> </script>
+    <!-- End of codeweavers Zendesk Widget script -->
+</head>
+
+<body>
+    <!--Heading/Menu Section-->
+
+    <header>
+        <img src="assets/images/codeweavers-logo.svg" alt="">
+        <h6>Codeweavers - Quick Start Guide</h6>
+        <a href="https://docs.codeweavers.net" target="_blank">
+            <p>Full API Reference</p>
+        </a>
+    </header>
+
+    <nav>
+        <p id="list-show-click">Quick Start Guide
+            <img id="change-chevron" src="assets/images/chevron.svg" alt="Close">
+            <img id="change-chevron-hide" src="assets/images/chevron-closed.svg" alt="Close">
+        </p>
+        <ul class="list" id="hidden-list">
+            <a href="QuickStartGuideHome.html">
+                Introduction</strong>
+                </li>
+            </a>
+            <a href="apiVehicles.html">
+                <li>Stock Feed (api/vehicles)</li>
+            </a>
+            <a href="apiFinanceCalculateForDisplay.html">
+                <li>Calculate for Display (api/finance/calculatefordisplay)</li>
+            </a>
+            <a href="apiPaymentSearch.html">
+                <li class="current-link-location">
+                    <strong>Payment Search (api/vehicles/search)</strong>
+                </li>
+            </a>
+            <a href="FinanceCalculatorPlugin.html">
+                <li>Finance Calculator Plugin</li>
+            </a>
+            <a href="StandaloneApplyForFinanceForm.html">
+                Standalone Apply For Finance Form
+                </li>
+            </a>
+        </ul>
+
+        <div class="light-divider-navigation"></div>
+
+        <ul class="list">
+            <a href="GlossaryFAQs.html">
+                <li>Glossary/FAQs</li>
+            </a>
+        </ul>
+        <p id="back-to-top" class="paragraph-link">Back to Top
+				<img src="assets/images/chevron.svg" alt="Close" />
+			</p>
+    </nav>
+    <aside id="main-wrapper">
+        <div>
+            <h1>Payment Search</h1>
+            <div class="divider"></div>
+            <div class="infoboxgreen">
+                <strong>Request Type:</strong> POST
+                <br />
+                <strong>Endpoint:</strong> https://services.codeweavers.net/api/vehicles/search
+                <br />
+                <div class="Chevron-link-container">
+                    <p>
+                        <a class="paragraph-link" target="_blank" href="https://docs.codeweavers.net/#operation/VehiclesController_Search">Full API Reference
+                            <img src="assets/images/chevron-next-blue.svg" alt="">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="light-divider"></div>
+            <h2>Introduction</h2>
+            <p>Payment Search is used to filter vehicles on a listings page by selected finance parameters. For example, the
+                customer could select the parameters for the minimum and maximum monthly payments, finance product, term
+                length, annual mileage and deposit. Passing through the Stock IDs and these parameters into this service
+                will return quotes for all the vehicles that fit within these parameters.</p>
+            <div class="light-divider"></div>
+            <h2>Integration</h2>
+            <div class="infoboxblue">
+                    <img class="infoboxicon" src="assets/images/megaphone.svg" />
+            <p>The Payment Search service requires use of the
+                <a class="paragraph-link" href="apiVehicles.html">Stock Feed</a> to function. </p>
+                </div>
+            <div class="tabdiv">
+                <div class="tab">
+                    <div class="tablinks1-active" onclick="openTab(1, event, 'Request')">Request</div>
+                    <div class="tablinks1" onclick="openTab(1, event, 'Response')">Response</div>
+                </div>
+
+                <div id="Request" class="tabcontent1" style="display: block;">
+                    <div class="infoboxblue">
+                        <img class="infoboxicon" src="assets/images/megaphone.svg" />
+                        <p>Please note: You will need to replace the *'s with your ApiKey, which we will provide to you when
+                            the dealer signs up with us.</p>
+                    </div>
+                    <script src="https://gist.github.com/codeweaversdev/80f344b2d0a75679a51dcbd409b5538f.js"></script>
+                </div>
+
+                <div id="Response" class="tabcontent1">
+                    <script src="https://gist.github.com/codeweaversdev/026b700ab13e42c89308d92356183f66.js"></script>
+                </div>
+            </div>
+            <div class="light-divider"></div>
+            <h2>Questions?</h2>
+            <p>If you have any further questions on any of our services, please contact our customer support team at
+                <a class="paragraph-link" target="_blank" href="mailto:support@codeweavers.net" target="_top">support@codeweavers.net</a>, or click the Support button on the bottom right of this page.</p>
+        </div>
+    </aside>
+</body>
+
+</html>
